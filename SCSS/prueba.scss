@@ -55,6 +55,20 @@ h3{
     text-align: center;
 }
 
+.parrafoPrimero{
+    color: white;
+    font-family: $font-primary !important;
+    font-size: 3rem !important;
+    text-align: center !important;
+}
+
+.parrafoSegundo{
+    color: white;
+    font-family: $font-primary !important;
+    font-size: 4rem !important;
+    text-align: center !important;
+}
+
 /* Estilo de borde utilziado en varias secciones del sitio */
 .border{
     border:4px solid black;
