@@ -1,0 +1,22 @@
+$font-primary: 'Roboto', sans-serif;
+.container--contacto{
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items:stretch;
+    .text--size{
+        font-size: 14px;
+        color:white;
+        text-align: left;
+        font-family: $font-primary;
+        align-items: center;
+    }
+    .form-control{
+        font-size: 10px;
+        width: 100%;
+    }
+    section{
+        height: auto;
+        width: 100%;
+    }
+}

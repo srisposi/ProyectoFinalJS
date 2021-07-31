@@ -1,0 +1,689 @@
+@charset "UTF-8";
+/* Hoja de Estilos del Sitio */
+/* Estilos Generales */
+/* CDN de los fonts utilziados en el proyecto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap");
+/* ================================================================= */
+/* RESETEO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* ================================================================= */
+/* ================================================================= */
+/* HTML */
+html {
+  font-size: 62.5%;
+  background-color: cornflowerblue; }
+
+.background {
+  background-color: cornflowerblue; }
+
+/* ================================================================= */
+/* ================================================================= */
+/* Estilo del header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20vh;
+  display: grid;
+  z-index: 1;
+  grid-template-columns: repeat(15, auto);
+  grid-template-rows: 62px auto auto;
+  justify-items: center;
+  gap: 1rem;
+  background: #7fdcf0;
+  background: linear-gradient(118deg, #7fdcf0 4%, #78ceec 37%, #1073a3 43%, #6fbce7 70%, #5588d8 73%, #211fbb 89%);
+  border: 4px solid black;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; }
+
+a {
+  margin: 10px;
+  /*Margen a los enlaces para separarlos*/ }
+
+/* Estilo para el 1er hijo del header */
+.header__logo {
+  border: 3px solid black;
+  padding: 1px;
+  margin: 2px;
+  grid-column: 1/2;
+  align-items: center;
+  /*     transform: rotate(720deg);
+    transition: all 3s;
+ */ }
+
+/* Estilo para el 2do hijo del header */
+.header__form {
+  margin: 2px;
+  grid-column: 12/14;
+  align-items: center;
+  grid-row: 2; }
+
+/* Estilo para el 3er hijo del header */
+.header__nabvar {
+  grid-column: 5/11;
+  grid-row: 3;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif; }
+
+/* Estilo de letra y color para los elementos de navegación */
+/* Estilo para eliminar las viñetas de todos el proyecto*/
+.header .header__nabvar--ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-evenly; }
+
+/*Estilo para eliminar el subrayado*/
+.header .header__navbar--a {
+  text-decoration: none; }
+
+/* ================================================================= */
+/* Estilo para elementos en todo el documento  */
+h1 {
+  font-size: 4rem;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 21rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  text-align: center; }
+
+h2 {
+  font-family: 'Roboto Slab', sans-serif; }
+
+h3 {
+  display: inline;
+  text-align: left;
+  padding: 2px; }
+
+/* Estilo de borde utilziado en varias secciones del sitio */
+.border {
+  border: 4px solid black; }
+
+/*Carouse*/
+#carrusel {
+  overflow: hidden;
+  border-radius: 45px; }
+
+#carrusel .carousel-indicators li {
+  border: 0;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%; }
+
+#carrusel .carousel-indicators li.active {
+  border: 0;
+  background-color: aqua;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%; }
+
+#carrusel .carousel-item {
+  height: 500px;
+  width: 200px; }
+
+#carrusel .carousel-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 20px;
+  width: 50px;
+  line-height: 50px;
+  font-size: 35px;
+  display: block;
+  text-align: center;
+  border-radius: 100%; }
+
+#carrusel .carousel-arrow-prev {
+  left: 2rem; }
+
+#carrusel .carousel-arrow-next {
+  right: 2rem; }
+
+/* Modal */
+.modal .modal-header {
+  background-color: aqua; }
+
+.modal .modal-body {
+  background-color: blue;
+  text-align: center; }
+
+.modal .modal-footer {
+  background-color: darkblue; }
+
+.modal .modal-body p {
+  font-size: large;
+  color: white; }
+
+/* Collapse */
+.collapse .card-body {
+  background-color: cornflowerblue;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  padding: 0.5rem; }
+
+/* ::placeholder{
+    background: violet;
+    color: black;
+} */
+/* ================================================================= */
+/* ================================================================= */
+/* ESTILO PARA INDEX */
+.grid__contenedor {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  gap: 1rem; }
+
+.grid__contenedor h1 {
+  grid-column: 1/3;
+  align-items: center;
+  /*     border: 0.5rem solid darkblue;
+ */ }
+
+.grid__contenedor p {
+  grid-column: 1;
+  text-align: right;
+  font-size: 1.5rem;
+  justify-self: start;
+  font-family: 'Roboto', sans-serif;
+  /*     border: 0.5rem solid darkblue;
+ */ }
+
+.grid__contenedor iframe {
+  grid-column: 2;
+  justify-self: stretch;
+  align-self: stretch;
+  /*     border: 0.5rem solid darkblue;
+ */ }
+
+.grid__contenedor img {
+  grid-column: 1/3;
+  align-items: center;
+  /*     border: 0.5rem solid darkblue;
+ */ }
+
+/* ================================================================= */
+/* ================================================================= */
+/* ESTILO PARA REGISTRAR */
+.contenedorRegistrar__grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  gap: 1rem; }
+
+.contenedorRegistrar__grid--h1 {
+  margin: 1rem;
+  grid-column: 1/3;
+  grid-row: 1;
+  align-items: center; }
+
+.contenedorRegistrar__grid--section1 {
+  grid-column: 1;
+  grid-row: 2;
+  align-items: center; }
+
+.contenedorRegistrar__grid--section2 {
+  grid-column: 2;
+  grid-row: 2;
+  justify-items: center;
+  align-items: center;
+  padding: 2rem; }
+
+.contenedorRegistrar__soporte--grid {
+  grid-column: 2;
+  grid-row: 3;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  font-size: medium;
+  font-family: 'Roboto', sans-serif; }
+
+.contenedorRegistrar__soporte--flex {
+  display: flex;
+  flex-direction: column;
+  justify-items: center; }
+
+.sectionRegistrar {
+  height: 60vh;
+  width: 100%;
+  margin: 0 rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+
+.sectionRegistrar .sectionRegistrar__article {
+  display: flex;
+  height: auto;
+  width: auto;
+  padding: 2px;
+  border-color: 1px solid black; }
+
+#body_image--position {
+  height: 30rem;
+  width: 60rem; }
+
+.sectionRegistrar .sectionRegistrar__article--div1, .sectionRegistrar__article--div2,
+.sectionRegistrar__article--div3, .sectionRegistrar__article--div4, .sectionRegistrar__article--div5 {
+  display: flex;
+  margin: 2rem;
+  padding: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  color: darkblue; }
+
+/* ================================================================= */
+/* ================================================================= */
+/* ESTILO PARA EL INICIO DE SESION */
+.iniciarSesion__contenedor--grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  gap: 1rem; }
+
+.iniciarSesion__titulo--grid {
+  margin: 1rem;
+  grid-column: 1/3;
+  grid-row: 1;
+  align-items: center; }
+
+.iniciarSesion__formulario--grid {
+  margin: 1rem;
+  grid-column: 1;
+  grid-row: 2;
+  justify-items: center;
+  align-items: center; }
+
+.iniciarSesion__imagen--grid {
+  margin: 1rem;
+  grid-row: 2;
+  grid-column: 2;
+  justify-items: center;
+  align-items: center; }
+
+.sectionSesion {
+  height: 100vh;
+  width: 100%;
+  margin: 0rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap; }
+
+.sectionSesion .body__sectionSesion--img {
+  height: auto;
+  width: auto;
+  padding: 2px;
+  border-color: 1px solid black;
+  background-color: blue; }
+
+.sectionSesion .articleSesion__div1, .articleSesion__div2 {
+  display: flex;
+  margin: 2rem;
+  padding: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  color: darkblue; }
+
+.sectionSesion .articleSesion__button {
+  display: flex;
+  margin: 2rem;
+  padding: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1rem; }
+
+/* ================================================================= */
+/* ================================================================= */
+/* ESTILO PARA PRECIOS */
+.contenedorPrecios__grid {
+  display: grid;
+  grid-template-rows: 0.25fr 1fr 0.5fr;
+  gap: 1rem; }
+
+.contenedorPrecios__titulo--grid {
+  margin: 1rem;
+  grid-row: 1;
+  align-items: center; }
+
+.contenedorPrecios__tablaPrecios--grid {
+  margin: 1rem;
+  grid-column: repeat(4, auto);
+  grid-row: repeat(5, auto);
+  justify-content: center;
+  align-items: center; }
+
+.contenedorPrecios__parrafo--grid {
+  margin: 1rem;
+  grid-row: 3;
+  align-items: center;
+  font-size: medium;
+  font-family: 'Roboto';
+  text-align: center;
+  color: darkblue;
+  margin-top: 25rem; }
+
+.grid__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: medium;
+  font-family: 'Roboto';
+  text-align: center;
+  border: 1rem solid black;
+  width: 400px;
+  height: 50px;
+  color: white;
+  background-color: blue; }
+
+.grid__title--p {
+  align-items: center;
+  justify-items: center; }
+
+/*  .sectionPrecios{
+    height: 80vh;
+    margin-top: 4rem;
+    padding: 1rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.sectionPrecios .sectionPrecios__article1{
+
+   padding: 1rem; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
+    border-color: black;
+  
+} 
+
+.sectionPrecios .sectionPrecios__article2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
+    text-align: center;
+    font-size: 2.5rem;
+}  */
+/* Estilo para una de las filas de la tabla */
+#body__table--file1 {
+  border: 1rem solid black;
+  width: 400px;
+  height: 50px;
+  color: white;
+  background-color: blue; }
+
+/* Estilo para una de las filas de la tabla */
+#body__table--file2 {
+  border: 1rem solid black;
+  width: 400px;
+  height: 50px;
+  color: black;
+  background-color: cornflowerblue; }
+
+.contenedorPrecios__tablaPrecios--grid {
+  display: grid;
+  height: 40vh;
+  width: 40vh;
+  padding: 0.5rem;
+  margin-left: 65rem;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(5, auto);
+  font-size: 20px; }
+
+.contenedorPrecios__tablaPrecios--grid .grid__title {
+  height: 10rem;
+  width: 25rem;
+  padding-left: 8rem;
+  align-items: center;
+  text-align: center;
+  font-weight: bold; }
+
+.contenedorPrecios__tablaPrecios--grid p {
+  height: 10rem;
+  width: 25rem;
+  padding-top: 3rem;
+  align-items: center;
+  text-align: center;
+  border: solid 1px darkslateblue; }
+
+/* ================================================================= */
+/* ================================================================= */
+/* ESTILO PARA HISTORIA */
+.articleHistoria {
+  height: 80vh;
+  margin: 0rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-between; }
+
+.articleHistoria .body__article--img {
+  height: 60%;
+  width: 60%;
+  padding: 0.5rem;
+  margin: 2px;
+  border: 2px solid blue; }
+
+.articleHistoria p {
+  height: 40%;
+  padding: 0.5rem;
+  margin: 2px;
+  color: darkblue;
+  text-align: left;
+  font-size: 2rem; }
+
+/* ================================================================= */
+/* ================================================================= */
+/* ESTILO PARA PREGUNTAS FRECUENTES */
+.articlePreguntas {
+  height: 80vh;
+  border: 4px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between; }
+
+.articlePreguntas .body__article--question {
+  margin: 2px;
+  border: 2px solid blue; }
+
+.articlePreguntas h2 {
+  margin: 1rem;
+  padding: 0.5rem;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 3rem; }
+
+.articlePreguntas p {
+  margin: 1rem;
+  padding: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem; }
+
+/* ================================================================= */
+/* ================================================================= */
+/* ESTILO PARA CONTACTO */
+.contenedorContacto__grid {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: 40% 60%;
+  gap: 1rem; }
+
+.contenedorContacto__titulo--grid {
+  margin: 1rem;
+  grid-row: 1;
+  grid-column: 1/3;
+  align-items: center; }
+
+.contenedorContacto__formulario--grid {
+  margin: 1rem;
+  grid-row: 2;
+  grid-column: 1;
+  align-items: center; }
+
+.contenedorContacto__textarea--grid {
+  margin: 1rem;
+  grid-row: 3;
+  grid-column: 1;
+  align-items: center; }
+
+.contenedorContacto__mapa--grid {
+  margin: 1rem;
+  grid-row: 3;
+  grid-column: 2;
+  align-items: center; }
+
+.contenedorContacto__form--grid {
+  margin: 1rem;
+  grid-row: 4;
+  grid-column: 1;
+  align-items: center; }
+
+/* .sectionContacto{
+    height: 100vh;
+    width: 100%;
+    margin: 0.2rem;
+    padding: 0.5rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+
+} */
+.sectionContacto__article1 {
+  height: 30%;
+  margin: 4px;
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: space-around; }
+
+.sectionContacto__article1 .sectionContacto__article1--div1, .sectionContacto__article1--div2, .sectionContacto__article1--div3,
+.sectionContacto__article1--div4, .sectionContacto__article1--div5 {
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  font-size: 1.5rem;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start; }
+
+.sectionContacto__article2 {
+  height: 60%;
+  width: 90%;
+  margin: 4px;
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center; }
+
+.sectionContacto__article2--div1 {
+  height: auto;
+  width: 100%;
+  justify-content: space-between;
+  margin: 2px;
+  padding: 1px; }
+
+.sectionContacto__article2--div2 {
+  display: flex;
+  height: auto;
+  width: 100%;
+  margin: 2px; }
+
+.sectionContacto__article3 {
+  height: 30%;
+  margin: 4px;
+  padding: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap; }
+
+.sectionContacto__article3 .sectionContacto__article3--div {
+  height: auto;
+  width: Auto;
+  background: #8E2DE2;
+  margin-right: 4px;
+  padding: 1px; }
+
+/* ================================================================= */
+/* ================================================================= */
+/* ESTILO PARA EL FOOTER*/
+.footer {
+  height: 15vh;
+  margin: 2px;
+  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  background-image: linear-gradient(#8E2DE2 0%, #4A00E0 100%);
+  display: grid;
+  grid-template-columns: repeat(15, auto);
+  grid-template-rows: 10px 10px 2fr;
+  justify-items: center;
+  gap: 1rem; }
+
+.footer__name {
+  margin: 2px;
+  padding: 10px;
+  grid-column: 2/4;
+  grid-row: 1;
+  align-items: center; }
+
+.footer__redes {
+  margin: 2px;
+  padding: 10px;
+  grid-column: 1/13;
+  grid-row: 3;
+  align-items: center; }
+
+.footer__copyright {
+  margin: 2px;
+  padding: 10px;
+  grid-column: 11/15;
+  grid-row: 2;
+  align-items: center; }
+
+.footer__redes--navbar {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-between; }
+
+.footer__redes ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.footer .footer__redes a {
+  text-decoration: none; }
+
+/* ================================================================= */

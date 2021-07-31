@@ -1,0 +1,654 @@
+@charset "UTF-8";
+/* Hoja de Estilos del Sitio */
+/* Estilos Generales */
+/* CDN de los fonts utilziados en el proyecto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+/* Import de las porciones de codigo en SASS */
+/* .background{
+    background-color: blueviolet;
+}        
+ */
+/* .background--image{
+        background-image: url("https://i.blogs.es/c3e445/multi-storey-car-park-2705368_960_720/1366_2000.jpg");
+}*/
+/* RESETEO */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.view {
+  height: auto;
+  width: auto; }
+
+/* Estilo del header */
+.header nav {
+  position: fixed;
+  z-index: 1;
+  border: 4px solid black;
+  font-size: medium;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold; }
+
+.header__nav {
+  z-index: 1;
+  background: #f10000;
+  background: radial-gradient(circle, #f10000 4%, #020024 25%, #cf0005 66%, #202124 88%);
+  border: 4px solid black;
+  font-size: medium;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: bold; }
+
+/* Estilo para el logo */
+.header__logo:hover {
+  border: 3px solid black;
+  padding: 1px;
+  margin: 2px;
+  grid-column: 1/2;
+  align-items: center;
+  transform: rotate(720deg);
+  transition: all 3s; }
+
+/* Fórmulas SASS */
+.btn--twitter {
+  background-color: #55acee; }
+
+.btn--instagram {
+  background-color: red; }
+
+.btn--facebook {
+  background-color: #3a5795; }
+
+.btn--whatsapp {
+  background-color: #C25E30; }
+
+/* ================================================================= */
+/* ESTILO PARA EL FOOTER*/
+.page-footer {
+  margin: auto;
+  padding: 2px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px; }
+  .page-footer hr {
+    width: 125px;
+    height: 2px; }
+  .page-footer .container {
+    width: auto;
+    height: auto; }
+    .page-footer .container ul li a {
+      color: white; }
+  .page-footer p a {
+    color: white; }
+
+.container--contacto {
+  height: auto;
+  width: auto;
+  justify-content: center;
+  align-items: stretch; }
+  .container--contacto .text--size {
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    align-items: center; }
+  .container--contacto .form-control {
+    font-size: 10px;
+    width: 100%; }
+  .container--contacto section {
+    height: auto;
+    width: 100%; }
+
+.container--registrar {
+  height: auto;
+  width: auto;
+  justify-content: center;
+  align-items: stretch; }
+  .container--registrar .form-control .text--size {
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    align-items: center; }
+    .container--registrar .form-control .text--size .small--font {
+      font-family: "Roboto", sans-serif;
+      color: white;
+      font-size: 10px; }
+  .container--registrar .row button {
+    font-family: "Roboto", sans-serif;
+    background-color: #b22222;
+    color: white;
+    font-size: 14px; }
+  .container--registrar .row label {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: white; }
+  .container--registrar .modal-header {
+    background-color: black;
+    color: white; }
+  .container--registrar .modal-body {
+    background-color: grey;
+    text-align: center; }
+    .container--registrar .modal-body p {
+      font-size: large;
+      color: white; }
+  .container--registrar .modal-footer {
+    background-color: grey; }
+    .container--registrar .modal-footer .btn {
+      background-color: #b22222;
+      color: white; }
+  .container--registrar .collapse .collapse__text--font {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    background-color: #b22222;
+    color: white; }
+
+.container--iniciarsesion {
+  height: auto;
+  width: auto;
+  justify-content: center;
+  align-items: stretch;
+  font-size: 14px;
+  color: white;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  align-items: center; }
+  .container--iniciarsesion .text--size {
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    align-items: center; }
+  .container--iniciarsesion .form-group .text--size {
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    align-items: center; }
+  .container--iniciarsesion .row button {
+    font-family: "Roboto", sans-serif;
+    background-color: #b22222;
+    color: white;
+    font-size: 14px; }
+  .container--iniciarsesion .row label {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: white; }
+  .container--iniciarsesion .modal-header {
+    background-color: black;
+    color: white; }
+  .container--iniciarsesion .modal-body {
+    background-color: grey;
+    text-align: center; }
+    .container--iniciarsesion .modal-body p {
+      font-size: large;
+      color: white; }
+  .container--iniciarsesion .modal-footer {
+    background-color: grey; }
+    .container--iniciarsesion .modal-footer .btn {
+      background-color: #b22222;
+      color: white; }
+
+.container--precios {
+  height: auto;
+  width: auto;
+  justify-content: center;
+  align-items: stretch;
+  font-family: "Roboto", sans-serif; }
+  .container--precios .table {
+    color: white; }
+  .container--precios thead {
+    font-size: 18px;
+    background-color: #b22222; }
+  .container--precios tbody {
+    font-size: 14px; }
+
+.precios--text {
+  margin: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  border: 4px solid #b22222; }
+
+.container__precios--cards {
+  justify-content: center;
+  align-items: center !important;
+  border-radius: 5px;
+  margin-bottom: 2rem; }
+
+.table__text--align {
+  text-align: center; }
+
+.btn--color {
+  background-color: #b22222; }
+
+.contenedor-pago {
+  width: 90%;
+  max-width: 1000px;
+  padding: 40px 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+/* ---------- Estilos Generales de las Tarjetas ----------*/
+.tarjeta {
+  width: 100%;
+  max-width: 550px;
+  position: relative;
+  color: #fff;
+  transition: .3s ease all;
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  cursor: pointer;
+  z-index: 2; }
+  .tarjeta.active {
+    transform: rotateY(180deg); }
+  .tarjeta > div {
+    padding: 30px;
+    border-radius: 15px;
+    min-height: 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 10px 0 rgba(90, 116, 148, 0.3); }
+
+/* ---------- Tarjeta Delantera ----------*/
+.tarjeta .delantera {
+  width: 100%;
+  background: url(../img/bg-tarjeta/bg-tarjeta-02.jpg);
+  background-size: cover; }
+  .tarjeta .delantera .logo-marca {
+    text-align: right;
+    min-height: 50px; }
+  .tarjeta .delantera .logo-marca img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 80px; }
+  .tarjeta .delantera .chip {
+    width: 100%;
+    max-width: 50px;
+    margin-bottom: 20px; }
+  .tarjeta .delantera .grupo .label {
+    font-size: 16px;
+    color: #7d8994;
+    margin-bottom: 5px; }
+
+.delantera .grupo .numero,
+.delantera .grupo .nombre,
+.delantera .grupo .expiracion {
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase; }
+
+.delantera .flexbox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; }
+
+/* ---------- Tarjeta Trasera ----------*/
+.trasera {
+  background: url(../img/bg-tarjeta/bg-tarjeta-02.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  transform: rotateY(180deg);
+  backface-visibility: hidden; }
+  .trasera .barra-magnetica {
+    height: 40px;
+    background: #000;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0; }
+  .trasera .datos {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between; }
+    .trasera .datos p {
+      margin-bottom: 5px; }
+    .trasera .datos #firma {
+      width: 70%; }
+      .trasera .datos #firma .firma {
+        height: 40px;
+        background: repeating-linear-gradient(skyblue 0, skyblue 5px, orange 5px, orange 10px); }
+        .trasera .datos #firma .firma p {
+          line-height: 40px;
+          font-family: 'Liu Jian Mao Cao', cursive;
+          color: #000;
+          font-size: 30px;
+          padding: 0 10px;
+          text-transform: capitalize; }
+    .trasera .datos #ccv {
+      width: 20%; }
+      .trasera .datos #ccv .ccv {
+        background: #fff;
+        height: 40px;
+        color: #000;
+        padding: 10px;
+        text-align: center; }
+  .trasera .leyenda {
+    font-size: 14px;
+    line-height: 24px; }
+  .trasera .link-banco {
+    font-size: 14px;
+    color: #fff; }
+
+/* ---------- Contenedor Boton ----------*/
+.contenedor-btn .btn-abrir-formulario {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 20px;
+  background: #b22222;
+  color: #fff;
+  position: relative;
+  top: -25px;
+  z-index: 3;
+  border-radius: 100%;
+  box-shadow: -5px 4px 8px rgba(24, 56, 182, 0.4);
+  padding: 5px;
+  transition: all .2s ease;
+  border: none;
+  cursor: pointer; }
+
+.contenedor-btn .btn-abrir-formulario:hover {
+  background: #b22222; }
+
+.contenedor-btn .btn-abrir-formulario.active {
+  transform: rotate(45deg); }
+
+/* ---------- Formulario Tarjeta ----------*/
+.formulario-tarjeta {
+  background: #fff;
+  width: 100%;
+  max-width: 700px;
+  padding: 150px 30px 30px 30px;
+  border-radius: 10px;
+  position: relative;
+  top: -150px;
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: clip-path .3s ease-out; }
+  .formulario-tarjeta.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+  .formulario-tarjeta label {
+    display: block;
+    color: #7d8994;
+    margin-bottom: 5px;
+    font-size: 16px; }
+
+.formulario-tarjeta input,
+.formulario-tarjeta select,
+.btn-enviar {
+  border: 2px solid #CED6E0;
+  font-size: 18px;
+  height: 50px;
+  width: 100%;
+  padding: 5px 12px;
+  transition: .3s ease all;
+  border-radius: 5px; }
+
+.formulario-tarjeta input:hover,
+.formulario-tarjeta select:hover {
+  border: 2px solid #93BDED; }
+
+.formulario-tarjeta input:focus,
+.formulario-tarjeta select:focus {
+  outline: #040404;
+  box-shadow: 1px 7px 10px -5px rgba(90, 116, 148, 0.3); }
+
+.formulario-tarjeta input {
+  margin-bottom: 20px;
+  text-transform: uppercase; }
+
+.formulario-tarjeta .flexbox {
+  display: flex;
+  justify-content: space-between; }
+
+.formulario-tarjeta .expira {
+  width: 100%; }
+
+.formulario-tarjeta .ccv {
+  min-width: 100px; }
+
+.formulario-tarjeta .grupo-select {
+  width: 100%;
+  margin-right: 15px;
+  position: relative; }
+
+.formulario-tarjeta select {
+  -webkit-appearance: none; }
+
+.formulario-tarjeta .grupo-select i {
+  position: absolute;
+  color: #CED6E0;
+  top: 18px;
+  right: 15px;
+  transition: .3s ease all; }
+
+.formulario-tarjeta .grupo-select:hover i {
+  color: #93bfed; }
+
+.formulario-tarjeta .btn-enviar {
+  border: none;
+  padding: 10px;
+  font-size: 22px;
+  color: #fff;
+  background: #b22222;
+  box-shadow: 2px 2px 10px 0px rgba(0, 85, 212, 0.4);
+  cursor: pointer; }
+
+.formulario-tarjeta .btn-enviar:hover {
+  background: #b22222; }
+
+/* Definición de variables */
+/* ================================================================= */
+/* Animación */
+@keyframes animacion {
+  from { }
+  to {
+    /* probar propiedades */
+    transform: skewY(25deg); } }
+
+/* configuracion inicial */
+.animame {
+  animation: animate__rubberBand 1s linear 3s infinite alternate; }
+
+/* Estilo para elementos en todo el documento  */
+a {
+  margin: 10px;
+  /*Margen a los enlaces para separarlos*/ }
+
+h1 {
+  color: white;
+  font-size: 4rem;
+  font-family: "Roboto", sans-serif;
+  text-align: center; }
+
+h2 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif; }
+
+h3 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  text-align: center; }
+
+/* Estilo de borde utilziado en varias secciones del sitio */
+.border {
+  border: 4px solid black; }
+
+/*Carrousel*/
+#carrusel {
+  margin: auto;
+  padding: auto;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  height: 45vh;
+  overflow: hidden;
+  border-radius: 45px;
+  justify-content: center;
+  /* margin: 2rem;
+    padding: 0.5rem; */ }
+  #carrusel .carousel-indicators li {
+    border: 0;
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%; }
+    #carrusel .carousel-indicators li .active {
+      border: 0;
+      background-color: aqua;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%; }
+  #carrusel .carousel-item {
+    height: 500px;
+    width: 200px; }
+  #carrusel .carousel-arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 20px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 35px;
+    display: block;
+    text-align: center;
+    border-radius: 100%; }
+    #carrusel .carousel-arrow .carousel-arrow-prev {
+      left: 2rem; }
+    #carrusel .carousel-arrow .carousel-arrow-next {
+      right: 2rem; }
+
+.text--index p {
+  font-size: 14px;
+  color: white;
+  text-align: left;
+  font-family: "Roboto", sans-serif; }
+
+/* ================================================================= */
+/* ESTILO PARA INDEX */
+.navbar-dark .navbar-toggler {
+  background-color: white;
+  border-color: rgba(8, 8, 8, 0.85); }
+
+.navbar-dark .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+
+.subtitle {
+  margin-top: 4rem; }
+
+.container--cards .row {
+  margin: auto;
+  padding: auto;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.container--cards .cards--parameter {
+  height: auto;
+  width: auto;
+  margin: 1.5rem;
+  padding: 0.75rem;
+  border: 2px solid #b22222; }
+
+.container--cards .card-title {
+  text-align: center;
+  color: #b22222;
+  font-size: "Roboto", sans-serif;
+  font-size: 14px; }
+
+.container--cards .card-text {
+  text-align: center;
+  color: black;
+  font-size: "Montserrat", sans-serif;
+  font-size: 10px; }
+
+.tituloEncabezado {
+  color: white;
+  font-size: 4rem;
+  font-family: "Roboto", sans-serif;
+  text-align: center; }
+
+.parrafoPrimero {
+  padding-top: 5rem;
+  font-size: 3.5rem;
+  color: white;
+  text-align: left;
+  font-family: "Roboto", sans-serif; }
+
+.parrafoSegundo {
+  font-size: 2rem;
+  color: white;
+  text-align: left;
+  font-family: "Roboto", sans-serif; }
+
+/* ================================================================= */
+/* ================================================================= */
+/* ESTILO PARA HISTORIA */
+.articleHistoria {
+  height: auto;
+  width: auto;
+  margin: 2rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch; }
+  .articleHistoria .body__article--img {
+    padding: 0.5rem;
+    border: 2px solid #b22222; }
+  .articleHistoria p {
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    font-family: "Roboto", sans-serif; }
+
+/* ================================================================= */
+/* ================================================================= */
+/* ESTILO PARA PREGUNTAS FRECUENTES */
+.articlePreguntas {
+  height: auto;
+  margin: 3rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  color: white; }
+  .articlePreguntas .body__article--question {
+    height: auto;
+    margin: 2rem;
+    border: 2px solid #b22222; }
+  .articlePreguntas h2 {
+    margin: 1rem;
+    padding: 0.5rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 3rem;
+    align-items: flex-start; }
+  .articlePreguntas p {
+    margin: 1rem;
+    padding: 0.5rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem; }
+
+/* ================================================================= */

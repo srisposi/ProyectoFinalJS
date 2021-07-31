@@ -1,0 +1,248 @@
+/* Hoja de Estilos del Sitio */
+/* Estilos Generales */
+
+/* CDN de los fonts utilziados en el proyecto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+/* Import de las porciones de codigo en SASS */
+@import "_color.scss";
+@import "_general.scss";
+@import "_header.scss";
+@import "_operacion.scss";
+@import "_footer.scss";
+@import "_contacto.scss";
+@import "_registrar.scss";
+@import "_iniciar-sesion.scss";
+@import "_precios.scss";
+@import "_pago.scss";
+/* Definición de variables */
+$font-primary: 'Roboto', sans-serif;
+$font-secundary: 'Montserrat', sans-serif;
+$padding-general: 1rem;
+
+/* ================================================================= */
+/* Animación */
+@keyframes animacion {
+    from { }
+    to {
+      /* probar propiedades */
+    transform: skewY(25deg)
+    }
+  } /* configuracion inicial */
+.animame {
+    animation: animate__rubberBand 1s linear 3s infinite alternate;}
+/* Estilo para elementos en todo el documento  */
+a {
+    margin: 10px;  /*Margen a los enlaces para separarlos*/
+}
+h1{
+    color: white;
+    font-size: 4rem;
+    font-family: $font-primary;
+    text-align: center;
+} 
+h2 {
+    color: white;
+    font-family: $font-secundary;
+    font-size: 3rem;
+    font-family: $font-primary;
+}
+
+h3{
+    color: white;
+    font-family: $font-secundary;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Estilo de borde utilziado en varias secciones del sitio */
+.border{
+    border:4px solid black;
+}
+
+/*Carrousel*/
+#carrusel{
+    margin: auto;
+    padding: auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 45vh;
+    overflow: hidden;
+    border-radius: 45px;
+    justify-content: center;
+   /* margin: 2rem;
+    padding: 0.5rem; */
+
+    .carousel-indicators li{
+        border: 0;
+        background-color: #fff;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        
+        .active{
+            border: 0;
+            background-color: aqua;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+        }
+    }
+    .carousel-item{
+        @include sizes(500px, 200px)
+    }
+    .carousel-arrow{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 20px;
+        width: 50px;
+        line-height: 50px;
+        font-size: 35px;
+        display: block;
+        text-align: center;
+        border-radius: 100%;
+
+        .carousel-arrow-prev{
+            left: 2rem;
+        }
+        .carousel-arrow-next{
+            right: 2rem;
+        } 
+    }
+}
+.text--index p{
+    font-size: 14px;
+    color:white;
+    text-align: left;
+    font-family: $font-primary;
+}
+/* ================================================================= */
+/* ESTILO PARA INDEX */
+.navbar-dark .navbar-toggler {
+    background-color: white;
+    border-color: rgba(8, 8, 8, 0.85);
+}
+
+.navbar-dark .navbar-toggler  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.subtitle{
+    margin-top: 4rem;
+}
+
+.container--cards{
+    .row{
+        margin: auto;
+        padding: auto;
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+
+    }
+    .cards--parameter{
+        height: auto;
+        width: auto;
+        margin: 1.5rem;
+        padding: 0.75rem;
+        border: 2px solid #b22222;    
+    }
+    .card-title{
+        text-align: center;
+        color: #b22222;
+        font-size: $font-primary;
+        font-size: 14px;
+    }
+    .card-text{
+        text-align: center;
+        color: black;
+        font-size: $font-secundary;
+        font-size: 10px;
+    }
+}
+
+.tituloEncabezado{
+    color: white;
+    font-size: 4rem;
+    font-family: $font-primary;
+    text-align: center;
+}
+
+.parrafoPrimero{
+    padding-top: 5rem;
+    font-size: 3.5rem;
+    color:white;
+    text-align: left;
+    font-family: $font-primary;
+}
+
+.parrafoSegundo{
+    font-size: 2rem;
+    color:white;
+    text-align: left;
+    font-family: $font-primary;
+}
+
+/* ================================================================= */
+
+/* ================================================================= */
+/* ESTILO PARA HISTORIA */
+.articleHistoria{
+    height: auto;
+    width: auto;
+    margin: 2rem;
+    padding: 0.5rem; 
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    .body__article--img{
+        padding: 0.5rem;
+        border: 2px solid #b22222;    
+    }
+    p{
+        font-size: 14px;
+        color:white;
+        text-align: left;
+        font-family: $font-primary;
+    }   
+    
+}
+/* ================================================================= */
+
+/* ================================================================= */
+/* ESTILO PARA PREGUNTAS FRECUENTES */
+.articlePreguntas {
+    height: auto;
+    margin: 3rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    color: white;
+    .body__article--question{
+        height: auto;
+        margin: 2rem;
+        border: 2px solid #b22222;
+    }
+    h2{
+        margin: 1rem;
+        padding: 0.5rem;
+        font-family: $font-primary;
+        font-size: 3rem;
+        align-items: flex-start;
+    }
+    p{
+        margin: 1rem;
+        padding: 0.5rem;
+        font-family: $font-primary;
+        font-size: 1.5rem;
+    }
+}
+/* ================================================================= */

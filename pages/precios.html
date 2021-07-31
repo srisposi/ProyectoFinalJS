@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Estacionamiento para dejar su auto o vehiculo en un lugar seguro. Atención las 24 horas. Los mejores precios">
+    <meta name="keywords" content="Autos, Parking, Estacionamiento, Garage, Cuidar, estacionar, guardar, seguridad">
+    <link rel="icon" href="../favicon/elmecanico.ico"><!-- Link del icono -->
+    <title>El Mecánico - Precios</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <!-- Material Design -->
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
+    <!-- Hoja de estilo CSS -->
+    <link rel="stylesheet" href="../css/background.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="background">
+    <header class="container-fluid">
+        <!-- logo del negocio -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark header__nav">
+            <a class="navbar-brand  href=" #">
+                <img class="img-fluid header__logo" src="../img/elmecanico.jpg" alt="Logitipo" width="50" height="50">
+            </a>
+            <!-- Boton de collapse -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Links de navegación -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./registrar.html">Registrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./iniciar-sesion.html">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./precios.html">Precios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./historia.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pago.html">Pago</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Precios</h1>
+        <section class="container container--precios mr-auto p-4">
+            <!-- Sección 3 - Donde figuran los precios del establecimiento -->
+            <table class="table h-75 table__text--align">
+                <thead class="thead-#b22222">
+                    <tr>
+                        <th scope="col">Vehículo/Estadía</th>
+                        <th scope="col">Hora</th>
+                        <th scope="col">Día</th>
+                        <th scope="col">Mes</th>
+                        <th scope="col">Año</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Moto</th>
+                        <td>55</td>
+                        <td>90</td>
+                        <td>1300</td>
+                        <td>15000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Auto</th>
+                        <td>84</td>
+                        <td>160</td>
+                        <td>2500</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Pick Up</th>
+                        <td>100</td>
+                        <td>200</td>
+                        <td>3000</td>
+                        <td>36000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Van</th>
+                        <td>120</td>
+                        <td>220</td>
+                        <td>3600</td>
+                        <td>43000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <select name="cars" id="cars">
+                                <option value="moto">Moto</option>
+                                <option value="auto">Auto</option>
+                                <option value="pickup">Pick-UP</option>
+                                <option value="van">Van</option>
+                            </select>
+                        </th>
+                        <td><input id="hora" type="number" value="0"></td>
+                        <td><input id="dia" type="number" value="0"></td>
+                        <td><input id="mes" type="number" value="0"></td>
+                        <td><input id="anio" type="number" value="0"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button onclick="obtenerValores()" class="btn btn-succes btn--color">
+                <h1>Calcular</h1>
+            </button>
+            <h1 id="resultado"></h1>
+        </section>
+        <section class="precios--text">
+            <p>En esta tabla usted podrá visualizar los precios actualizados.
+                No dude en consultar por promociones actuales. Se cuenta con varias disponibilidades y formas de pago.
+                Estamos a disposición par acualqueir consulta, tenemos varias formas de pago y maneras de finanziar su
+                estancia para que pase el mejor momento, estacionando su auto en este lugar.
+                Los precios están sujutos a modificaciones constantes, por aumentos y cambios de divisas, quedamos a
+                disposición y no dude en consultar antes de contrar un servicio para evitar inconvenientes.
+                Para aquellos pagos que se realicen con tarjetas, o metodos de pago mediante fintech relacionadas,
+                quedará sujeto a un porcentaje de aumento debido a la forma de operar que tienen las mismas.
+                Si requiere una factura en su pago, no olvide aclararlo y solicitarlo al momento de pagar para poder
+                realizar la con tiempo. Sepa entender la situación actual y que el estacionamiento cuenta con una demora
+                en la entrega de la factura de tres días hábiles al momento de realizar el pago.
+                Pedimos disculpas, por las molestias que esto pueda ocasionar y quedamos al pendiente ante cualquier
+                inquietud que se genere.
+        </section>
+
+        <section class="container container__precios--cards m-5 p-3">
+            <article class="row" id="vehiculosCards">
+                <!--<div class="col-sm-4">
+                     <div class="card" style="width: 100%;height: 100%;">
+                        <img src="../img/iconos/moto.png" class="card-img-top p-2"  alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Promoción 1</h5>
+                            <p class="item-price">$199</p>
+                            <p class="card-text">10% de promoción para los refereifos de autos que se encuentran en el estacionamiento</p>
+                            <a href="#" class="btn btn-danger">Contratar</a>
+                        </div> 
+                    </div> 
+                </div>-->
+
+            </article>
+            <h1 class="text-start">Precio Final</h1>
+            <h1 id="resultadoFinal"></h1>
+        </section>
+        <!--  <button id="obtenerValoresFinales"class="btn btn-success"><h1>Cálculo Final</h1></button> -->
+        <!--         <button onclick="obtenerValoresFinales()" id="btnPromociones" class="btn btn-danger">Contratar</button> 
+ -->
+    </main>
+
+    <footer class="page-footer bg-dark ">
+        <div class="bg-succes">
+            <div class=container>
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col-md-12 text-center">
+                        <a target="_blank" href="https://www.instagram.com/" <i
+                            class="fab fa-instagram text-white mr-4"></i> Instagram</a>
+                        <a target="_blank" href="https://es-la.facebook.com/" <i
+                            class="fab fa-facebook text-white mr-4"></i> Facebook</a>
+                        <a target="_blank" href="https://twitter.com/?lang=es/" <i
+                            class="fab fa-twitter text-white mr-4"></i> Twitter</a>
+                        <a target="_blank" href="https://www.whatsapp.com/?lang=es" <i
+                            class="fab fa-whatsapp text-white mr-4"></i> WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center text-md-left mt-5">
+            <div class="row">
+                <div class="col-md-4 mx-auto mb-4">
+                    <h5 class="text-uppercase font-weight-bold">Información</h5>
+                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-suto">
+                    <p>El estacionamiento "El Mecánico" se reserva los derechos de admisión y derechos de autor
+                        respectivos. Queda a disposición de cualquier necesidad de información, a través de los medios
+                        de comunicación acá dispuestos. Aguardamos su llamado, su consulta no molesta y esperamos se
+                        sienta cómodo, en el estacionamiento más tecnológico y moderno de la ciudad.</p>
+                </div>
+                <div class="col-md-4 mx-auto mb-4">
+                    <h5 class="text-uppercase font-weight-bold">Contacto</h5>
+                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-suto">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><i class="fas fa-home mr-3"> 9 de Julios</i></li>
+                        <li class="my-2"><i class="far fa-envelope mr-3"> elmecanico@gmail.com</i></li>
+                        <li class="my-2"><i class="fas fa-phone mr-3"> +5491166110033</i></li>
+                        <li class="my-2"><i class="fas fa-print mr-3"> elmecanicodocumento@gmail.com</i></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mx-auto mb-4">
+                    <h5 class="text-uppercase font-weight-bold">Links Importantes</h5>
+                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-suto">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="./registrar.html"> Registro</a></li>
+                        <li class="my-2"><a href="./preguntas-frecuentes.html"> Preguntas</a></li>
+                        <li class="my-2"><a href="./precios.html"> Precios</a></li>
+                        <li class="my-2"><a href="./contacto.html"> Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">
+            <p>&copy; Copyright
+                <a href="https://www.linkedin.com/in/sergio-daniel-risposi-377a73155/"> Diseñado por Risposi, Sergio
+                    Daniel</a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/apps.js"></script>
+</body>
+
+</html>

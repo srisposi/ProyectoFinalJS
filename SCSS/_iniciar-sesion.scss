@@ -1,0 +1,66 @@
+$font-primary: 'Roboto', sans-serif;
+.container--iniciarsesion{
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items:stretch;
+    font-size: 14px;
+    color:white;
+    text-align: left;
+    font-family: $font-primary;
+    align-items: center;    
+    
+    .text--size{
+        font-size: 14px;
+        color:white;
+        text-align: left;
+        font-family: $font-primary;
+        align-items: center;
+    }    
+    
+    .form-group{
+        .text--size{
+            font-size: 14px;
+            color:white;
+            text-align: left;
+            font-family: $font-primary;
+            align-items: center;
+        }
+    }        
+    .row{
+        button{
+            font-family: $font-primary;
+            background-color: #b22222;
+            color: white;
+            font-size: 14px;
+        }
+        label{
+            font-family: $font-primary;
+            font-size: 14px;
+            color: white;
+        }
+    }
+    .modal{
+        &-header{
+            background-color: black;
+            color: white;
+            }
+            &-body{
+                background-color: grey;
+                text-align: center;
+                
+                p{
+                    font-size: large;
+                    color: white;
+                }
+            }
+            &-footer{
+                background-color: grey;
+                .btn{
+                    background-color: #b22222;
+                    color: white;
+                }
+            }
+    }
+    
+}    

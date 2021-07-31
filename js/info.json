@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "image": "promocion1.png",
+        "name": "Promoción 1",
+        "precio": "10%",
+        "description": "10% de promoción para los refereifos de autos que se encuentran en el estacionamiento"
+    },
+    {
+        "id": 2,
+        "image": "promocion2.png",
+        "name": "Promoción 2",
+        "precio": "20%",
+        "description": "20% de promoción para los refereifos de autos que se encuentran en el estacionamiento"
+    },
+    {
+        "id": 3,
+        "image": "promocion3.png",
+        "name": "Promoción 3",
+        "precio": "25%",
+        "description": "25% de promoción para los refereifos de autos que se encuentran en el estacionamiento"
+    },
+    {
+        "id": 4,
+        "image": "promocion4.png",
+        "name": "Promoción 4",
+        "precio": "30%",
+        "description": "30% de promoción para los refereifos de autos que se encuentran en el estacionamiento"
+    }
+]

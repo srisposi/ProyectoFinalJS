@@ -1,0 +1,46 @@
+$font-primary: 'Roboto', sans-serif;
+.container--precios{
+
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items:stretch;
+    font-family: $font-primary;
+    .table{
+        color: white;
+    }
+    thead{
+        font-size: 18px;
+        background-color: #b22222;
+
+    }
+    tbody{
+        font-size: 14px;
+    }
+}   
+.precios--text{
+    margin: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-family: $font-primary;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    border: 4px solid #b22222;
+}
+
+
+.container__precios--cards{
+    justify-content: center;
+    align-items: center!important;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.table__text--align{
+    text-align: center;
+}
+
+.btn--color{
+    background-color: #b22222;
+}

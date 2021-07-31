@@ -1,0 +1,21 @@
+/* Fórmulas SASS */
+
+  $redes:(
+    twitter: #55acee,
+    instagram: red,
+    facebook: #3a5795,
+    whatsapp: #C25E30
+); 
+@each $clave, $valor in $redes {
+    .btn--#{$clave} {
+    background-color: $valor;
+    }
+} 
+
+
+@mixin sizes ($height, $width){
+    height: $height;
+    width: $width;
+}
+
+
